@@ -40,7 +40,7 @@ import {
 	isVercelDeployment,
 } from "./cors-config.js";
 
-const PORT = process.env.PORT || 3001;
+const PORT = parseInt(process.env.PORT || "3001", 10);
 
 const app = App();
 
