@@ -5,7 +5,6 @@
  * - CSS class merging
  * - Error parsing
  *
- * By Kunal Das
  */
 
 import { RoomServiceMsg } from "@/types/message";

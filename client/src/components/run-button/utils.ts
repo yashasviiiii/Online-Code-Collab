@@ -5,7 +5,6 @@
  * - Output formatting
  * - Socket messaging
  *
- * By Kunal Das
  */
 
 import { CodeServiceMsg } from "@/types/message";

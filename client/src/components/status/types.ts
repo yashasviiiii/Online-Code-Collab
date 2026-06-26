@@ -5,7 +5,6 @@
  * - API response types
  * - Status attributes
  *
- * By Kunal Das
  */
 
 export interface ServiceStatus {

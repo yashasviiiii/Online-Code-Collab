@@ -6,7 +6,6 @@
  * - Repository filtering
  * - Sorting and ordering
  *
- * By Kunal Das
  */
 
 import { cookies } from "next/headers";

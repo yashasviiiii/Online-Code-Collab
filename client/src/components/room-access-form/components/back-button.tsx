@@ -5,7 +5,6 @@
  * - Disabled state support
  * - Space-themed styling
  *
- * By Kunal Das
  */
 
 import { ArrowLeft } from "lucide-react";

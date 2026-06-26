@@ -5,7 +5,6 @@
  * - Accessible tooltip
  * - Animated icon button
  *
- * By Kunal Das
  */
 
 import { Info } from "lucide-react";

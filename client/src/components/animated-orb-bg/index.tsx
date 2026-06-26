@@ -6,7 +6,6 @@
  * - Mouse-based parallax
  * - Dynamic sizing
  *
- * By Kunal Das
  */
 
 "use client";

@@ -6,7 +6,6 @@
  * - Path handling
  * - Type-safe conversion
  *
- * By Kunal Das
  */
 
 import { FileCode, Folder } from "lucide-react";

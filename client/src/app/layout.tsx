@@ -7,7 +7,6 @@
  * - Toast notifications
  * - Analytics
  *
- * By Kunal Das
  */
 
 import { JetBrains_Mono, Orbitron, Outfit } from "next/font/google";
@@ -17,8 +16,6 @@ import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import {
 	BASE_CLIENT_URL,
-	NAME,
-	PORTFOLIO_URL,
 	SITE_DESCRIPTION,
 	SITE_NAME,
 } from "@/lib/constants";
@@ -52,12 +49,9 @@ export const metadata: Metadata = {
 	referrer: "origin-when-cross-origin",
 	keywords:
 		"codeconnect, code collaboration, real-time coding, pair programming, remote collaboration, live coding, code sharing, collaborative editor, monaco editor, cursor sharing, live preview, video chat, collaborative terminal, shared terminal, code execution, GitHub integration, web IDE, online IDE, collaborative development, coding platform, programming tools",
-	creator: NAME,
-	publisher: NAME,
-	authors: {
-		name: NAME,
-		url: PORTFOLIO_URL,
-	},
+	creator: SITE_NAME,
+	publisher: SITE_NAME,
+	authors: [{ name: SITE_NAME }],
 	metadataBase: BASE_CLIENT_URL ? new URL(BASE_CLIENT_URL) : undefined,
 	formatDetection: {
 		telephone: false,
@@ -74,7 +68,6 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		creator: "@kunaldasx",
 	},
 	alternates: {
 		canonical: BASE_CLIENT_URL,

@@ -5,7 +5,6 @@
  * - Camera state sync
  * - User notification
  *
- * By Kunal Das
  */
 
 import { StreamServiceMsg } from "../types/message.js";

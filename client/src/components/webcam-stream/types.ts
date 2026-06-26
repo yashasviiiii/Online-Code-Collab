@@ -4,7 +4,6 @@
  * - Device ID and label
  * - WebRTC device types
  *
- * By Kunal Das
  */
 
 export interface MediaDevice {

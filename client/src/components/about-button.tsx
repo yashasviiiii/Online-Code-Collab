@@ -5,7 +5,6 @@
  * - Dialog trigger
  * - Accessibility support
  *
- * By Kunal Das
  */
 
 "use client";

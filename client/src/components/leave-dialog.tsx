@@ -5,7 +5,6 @@
  * - Room leaving confirmation
  * - Leave action handling
  *
- * By Kunal Das
  */
 
 import { forwardRef, useCallback, useImperativeHandle, useState } from "react";

@@ -5,7 +5,6 @@
  * - Branch path handling
  * - Directory/file path handling
  *
- * By Kunal Das
  */
 
 import {

@@ -6,7 +6,6 @@
  * - Download/clear logs
  * - Welcome message
  *
- * By Kunal Das
  */
 
 import type { ExecutionResult } from "@/types/terminal";

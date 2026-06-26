@@ -6,7 +6,6 @@
  * - Animated scaling
  * - Device-specific interaction
  *
- * By Kunal Das
  */
 
 import type { User } from "@/types/user";

@@ -6,7 +6,6 @@
  * - Repository content retrieval
  * - Error handling
  *
- * By Kunal Das
  */
 
 import { cookies } from "next/headers";

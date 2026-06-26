@@ -5,7 +5,6 @@
  * - Extended tree item interface
  * - Repository structure types
  *
- * By Kunal Das
  */
 
 import type { TreeDataItem } from "@/components/tree";

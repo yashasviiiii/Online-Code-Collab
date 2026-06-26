@@ -1,7 +1,6 @@
 /**
  * Webcam streaming component that enables video/audio communication.
  *
- * By Kunal Das
  */
 
 import type { User } from "@/types/user";

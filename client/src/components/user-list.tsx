@@ -5,7 +5,6 @@
  * - Scrollable interface
  * - Accessible markup
  *
- * By Kunal Das
  */
 
 import type { User } from "@/types/user";

@@ -5,7 +5,6 @@
  * - Room-based updates
  * - User identity handling
  *
- * By Kunal Das
  */
 
 import { PointerServiceMsg } from "../types/message.js";

@@ -6,7 +6,6 @@
  * - Language state sync
  * - Real-time broadcast
  *
- * By Kunal Das
  */
 
 import { CodeServiceMsg } from "../types/message.js";

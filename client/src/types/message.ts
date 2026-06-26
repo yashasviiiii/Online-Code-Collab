@@ -6,7 +6,6 @@
  * - Scroll sync messages
  * - Video stream messages
  *
- * By Kunal Das
  */
 
 export enum RoomServiceMsg {

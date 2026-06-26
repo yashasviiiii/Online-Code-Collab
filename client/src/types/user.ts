@@ -4,7 +4,6 @@
  * - User ID
  * - Username
  *
- * By Kunal Das
  */
 
 export interface User {

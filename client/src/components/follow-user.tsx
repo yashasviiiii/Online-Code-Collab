@@ -6,7 +6,6 @@
  * - Active follower indicator
  * - Mobile support
  *
- * By Kunal Das
  */
 
 import type { User } from "@/types/user";

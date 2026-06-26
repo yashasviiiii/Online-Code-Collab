@@ -6,7 +6,6 @@
  * - Color-coded status indicators
  * - Status descriptions
  *
- * By Kunal Das
  */
 
 "use client";

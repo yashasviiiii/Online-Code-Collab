@@ -6,7 +6,6 @@
  * - Commit data formatting
  * - Error handling
  *
- * By Kunal Das
  */
 
 import type { CommitResponse } from "@/components/repo-browser/types/github";

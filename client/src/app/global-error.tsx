@@ -5,7 +5,6 @@
  * - Recovery options
  * - Development error details
  *
- * By Kunal Das
  */
 
 "use client";
@@ -16,7 +15,7 @@ import type { Route } from "next";
 import Link from "next/link";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
-import { CONTACT_URL } from "@/lib/constants";
+import { REPO_URL } from "@/lib/constants";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -42,7 +41,9 @@ Time: ${timestamp}
 Digest: ${error.digest || "No digest available"}
 URL: ${window.location.href}`;
 
-    return `${CONTACT_URL}?type=other&message=${encodeURIComponent(errorMessage)}`;
+    return REPO_URL
+      ? `${REPO_URL}/issues/new?body=${encodeURIComponent(errorMessage)}`
+      : null;
   };
 
   return (
@@ -62,12 +63,14 @@ URL: ${window.location.href}`;
               )}
             </AlertDescription>
             <div className="mt-6 flex flex-col justify-end gap-4 sm:flex-row">
-              <Button asChild className="gap-2" variant="outline">
-                <Link href={generateErrorReport() as Route} target="_blank">
-                  <Bug className="size-4" />
-                  Report Issue
-                </Link>
-              </Button>
+              {generateErrorReport() && (
+                <Button asChild className="gap-2" variant="outline">
+                  <Link href={generateErrorReport() as Route} target="_blank">
+                    <Bug className="size-4" />
+                    Report Issue
+                  </Link>
+                </Button>
+              )}
               <Button
                 className="gap-2"
                 onClick={() => reset()}

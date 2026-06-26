@@ -4,7 +4,6 @@
  * - Metadata configuration for OAuth pages
  * - Suspense boundary for async components
  *
- * By Kunal Das
  */
 
 import type { Metadata } from "next";

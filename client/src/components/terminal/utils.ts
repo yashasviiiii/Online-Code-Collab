@@ -5,7 +5,6 @@
  * - Timestamp formatting
  * - Message type coloring
  *
- * By Kunal Das
  */
 
 import { type ExecutionResult, ExecutionResultType } from "@/types/terminal";

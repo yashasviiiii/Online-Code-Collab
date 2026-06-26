@@ -5,7 +5,6 @@
  * - Query highlight
  * - Return to search button
  *
- * By Kunal Das
  */
 
 import { FolderSearch } from "lucide-react";

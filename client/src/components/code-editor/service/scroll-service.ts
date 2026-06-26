@@ -5,7 +5,6 @@
  * - Follow mode support
  * - User-specific scroll syncing
  *
- * By Kunal Das
  */
 
 import type { Scroll } from "@/types/scroll";

@@ -6,7 +6,6 @@
  * - Form validation
  * - Redirection handling
  *
- * By Kunal Das
  */
 
 "use client";

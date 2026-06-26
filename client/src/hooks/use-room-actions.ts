@@ -5,7 +5,6 @@
  * - Navigation after leaving
  * - Error handling
  *
- * By Kunal Das
  */
 
 import { useRouter } from "next/navigation";

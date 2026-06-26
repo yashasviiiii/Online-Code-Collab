@@ -6,7 +6,6 @@
  * - Parent window messaging
  * - Automatic window handling
  *
- * By Kunal Das
  */
 
 "use client";

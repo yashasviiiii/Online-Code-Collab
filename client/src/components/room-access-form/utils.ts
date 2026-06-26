@@ -6,7 +6,6 @@
  * - Room ID formatting
  * - Socket communications
  *
- * By Kunal Das
  */
 
 import { RoomServiceMsg } from "@/types/message";

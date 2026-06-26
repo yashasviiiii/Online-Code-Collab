@@ -5,7 +5,6 @@
  * - Alphanumeric characters
  * - Uppercase letters only
  *
- * By Kunal Das
  */
 
 export const generateRoomID = () => {

@@ -5,7 +5,6 @@
  * - Viewport line visibility checks
  * - Cursor style handling
  *
- * By Kunal Das
  */
 
 import type { Cursor } from "@/types/operation";

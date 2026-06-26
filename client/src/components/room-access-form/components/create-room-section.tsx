@@ -6,7 +6,6 @@
  * - Submit handling with space-themed UX
  * - Loading states
  *
- * By Kunal Das
  */
 
 import { useState } from "react";

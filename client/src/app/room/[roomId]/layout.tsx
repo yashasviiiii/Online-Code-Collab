@@ -4,9 +4,7 @@
  * Features:
  * - Custom metadata description for room sharing
  * - Pass-through children rendering
- *
- * By Kunal Das
- */
+ * */
 
 import type { Metadata } from "next";
 

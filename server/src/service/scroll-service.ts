@@ -5,7 +5,6 @@
  * - User identification
  * - Socket messaging
  *
- * By Kunal Das
  */
 
 import { ScrollServiceMsg } from "../types/message.js";

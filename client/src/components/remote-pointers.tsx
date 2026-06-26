@@ -6,7 +6,6 @@
  * - Smooth fade animations
  * - Viewport scaling
  *
- * By Kunal Das
  */
 
 import { PointerServiceMsg } from "@/types/message";

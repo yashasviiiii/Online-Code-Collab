@@ -1,7 +1,6 @@
 /**
  * Open from GitHub dialog component that handles file browsing and loading.
  *
- * By Kunal Das
  */
 
 import type { Monaco } from "@monaco-editor/react";

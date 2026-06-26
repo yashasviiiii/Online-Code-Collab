@@ -6,7 +6,6 @@
  * - Stream handling
  * - Error handling
  *
- * By Kunal Das
  */
 
 import { StreamServiceMsg } from "@/types/message";

@@ -6,7 +6,6 @@
  * - Synchronized language state
  * - Mobile support
  *
- * By Kunal Das
  */
 
 import { CodeServiceMsg } from "@/types/message";

@@ -1,6 +1,6 @@
 <h1 align="center" style>
   <br>
-  <a href="https://codeconnect-dev.vercel.app" target="_blank"><img src="https://raw.githubusercontent.com/kunaldasx/code-connect/refs/heads/main/client/src/app/logo.svg" alt="code connect" width="200"></a>
+  <a href="https://codeconnect-dev.vercel.app" target="_blank"><img src="client/src/app/logo.svg" alt="code connect" width="200"></a>
   <br>
   Code Connect
   <br>
@@ -29,9 +29,6 @@
   <a href="" target="_blank">
     <img src="https://img.shields.io/badge/Contributions-Welcome-brightgreen?logo=github">
   </a>
-  <a href="" target="_blank">
-    <img src="https://img.shields.io/badge/$-donate-ff69b4.svg">
-  </a>
 </p>
 
 <p align="center">
@@ -43,7 +40,7 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/kunaldasx/code-connect/refs/heads/main/client/public/images/cover.png" alt="preview" width="100%" />
+  <img src="client/public/images/cover.png" alt="preview" width="100%" />
 </p>
 
 🌐 **Live Demo**🔗 [codeconnect-dev.vercel.app](https://codeconnect-dev.vercel.app)
@@ -87,7 +84,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 ##### Clone this repository
 
 ```bash
-$ git clone https://github.com/kunaldasx/code-connect
+$ git clone <your-repo-url>
 $ cd code-connect
 ```
 
@@ -147,13 +144,9 @@ Once configured, Code Connect will be able to execute code through your local Pi
 
 ## How to Contribute
 
-1. Clone repo and create a new branch: `$ https://github.com/kunaldasx/code-connect -b name_for_new_branch`.
+1. Clone the repo and create a new branch: `git checkout -b name_for_new_branch`.
 2. Make changes and test
 3. Submit Pull Request with comprehensive description of changes
-
-## Emailware
-
-Code Connect is an [emailware](https://en.wiktionary.org/wiki/emailware). Meaning, if you liked using this app or it has helped you in any way, I'd like you send me an email at <kunaldasx@gmail.com> about anything you'd want to say about this software. I'd really appreciate it!
 
 ## Technologies
 
@@ -167,19 +160,6 @@ This software uses the following technologies:
 
 - **External Services:** Piston (code execution), GitHub REST API (repository management)
 
-## Support
-
-If you like this project and think it has helped in any way, consider buying me a coffee!
-
-<a href="" target="_blank"><img src="https://raw.githubusercontent.com/kunaldasx/code-connect/refs/heads/main/client/public/images/bmc-button.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
-
 ## License
 
 MIT
-
----
-
-> 🌐 [Visit my website →](https://kunaldasx.vercel.app/)<br>
-> 🖥️ [GitHub](https://github.com/kunaldasx) &nbsp;&middot;&nbsp;
-> 💼 [LinkedIn](https://www.linkedin.com/in/kunaldasx/) &nbsp;&middot;&nbsp;
-> 🐦 [Twitter / X](https://x.com/Kunaldasx) &nbsp;&middot;&nbsp;

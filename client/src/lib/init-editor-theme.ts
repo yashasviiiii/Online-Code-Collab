@@ -6,7 +6,6 @@
  * - CSS variable handling for consistent theming
  * - System/dark mode synchronization
  *
- * By Kunal Das
  */
 
 import type { Monaco } from "@monaco-editor/react";

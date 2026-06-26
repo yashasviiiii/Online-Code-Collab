@@ -5,7 +5,6 @@
  * - Usage instructions
  * - Terminal formatting
  *
- * By Kunal Das
  */
 
 import Image from "next/image";

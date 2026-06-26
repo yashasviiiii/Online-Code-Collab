@@ -5,7 +5,6 @@
  * - Accessible controls
  * - Styling customization
  *
- * By Kunal Das
  */
 
 import { LogOut } from "lucide-react";

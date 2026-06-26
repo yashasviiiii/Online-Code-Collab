@@ -6,7 +6,6 @@
  * - Room state management
  * - User data sync
  *
- * By Kunal Das
  */
 
 import { CodeServiceMsg, RoomServiceMsg } from "../types/message.js";

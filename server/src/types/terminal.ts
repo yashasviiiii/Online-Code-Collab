@@ -5,7 +5,6 @@
  * - Result type enumeration
  * - Output metadata
  *
- * By Kunal Das
  */
 
 export interface ExecutionResult {

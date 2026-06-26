@@ -4,7 +4,6 @@
  * - File name field
  * - Commit message field
  *
- * By Kunal Das
  */
 
 export interface CommitForm {

@@ -6,7 +6,6 @@
  * - Real-time sync
  * - Scroll synchronization
  *
- * By Kunal Das
  */
 
 import {

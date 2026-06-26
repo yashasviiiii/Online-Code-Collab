@@ -1,7 +1,6 @@
 /**
  * Create a style for a cursor.
  *
- * By Kunal Das
  */
 
 /**

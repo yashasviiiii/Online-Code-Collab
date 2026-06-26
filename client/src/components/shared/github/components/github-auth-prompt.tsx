@@ -2,7 +2,6 @@
  * GitHub authentication prompt component.
  * Displays login button or loading spinner based on auth state.
  *
- * By Kunal Das
  */
 
 import Image from "next/image";

@@ -5,7 +5,6 @@
  * - Median
  * - Standard deviation
  *
- * By Kunal Das
  */
 
 import type { Stats } from "./types";

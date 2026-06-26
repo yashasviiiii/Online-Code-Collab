@@ -5,7 +5,6 @@
  * - Disallowed paths
  * - Host URL
  *
- * By Kunal Das
  */
 
 import type { MetadataRoute } from "next";

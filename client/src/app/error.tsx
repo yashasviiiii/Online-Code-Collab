@@ -5,7 +5,6 @@
  * - Recovery options
  * - Development error details
  *
- * By Kunal Das
  */
 
 "use client";
@@ -15,7 +14,7 @@ import type { Route } from "next";
 import Link from "next/link";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
-import { BASE_CLIENT_URL, CONTACT_URL, IS_DEV_ENV } from "@/lib/constants";
+import { BASE_CLIENT_URL, IS_DEV_ENV, REPO_URL } from "@/lib/constants";
 
 export default function ErrorPage({
 	error,
@@ -37,7 +36,9 @@ Message: ${error.message || "Unknown error"}
 Stack: ${error.stack || "No stack trace available"}`;
 		}
 
-		return `${CONTACT_URL}?type=other&message=${encodeURIComponent(errorMessage)}`;
+		return REPO_URL
+			? `${REPO_URL}/issues/new?body=${encodeURIComponent(errorMessage)}`
+			: null;
 	};
 
 	return (
@@ -60,12 +61,17 @@ Stack: ${error.stack || "No stack trace available"}`;
 						<RefreshCcw className="size-4" />
 						Try Again
 					</Button>
-					<Button asChild className="gap-2" variant="outline">
-						<Link href={generateErrorReport() as Route} target="_blank">
-							<Bug className="size-4" />
-							Report Issue
-						</Link>
-					</Button>
+					{generateErrorReport() && (
+						<Button asChild className="gap-2" variant="outline">
+							<Link
+								href={generateErrorReport() as Route}
+								target="_blank"
+							>
+								<Bug className="size-4" />
+								Report Issue
+							</Link>
+						</Button>
+					)}
 					<Button asChild className="gap-2" variant="default">
 						<a href={BASE_CLIENT_URL}>
 							<Home className="size-4" />

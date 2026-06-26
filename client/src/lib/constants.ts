@@ -6,7 +6,6 @@
  * - OAuth credentials
  * - App metadata
  *
- * By Kunal Das
  */
 
 export const IS_DEV_ENV =
@@ -45,11 +44,7 @@ export const LATENCY_TEST_DESCRIPTION =
 export const GITHUB_OAUTH_TITLE = "GitHub OAuth Callback";
 export const GITHUB_OAUTH_DESCRIPTION =
 	"This page is used to handle the GitHub OAuth callback.";
-export const NAME = "Kunal Das";
-export const PORTFOLIO_URL = "https://kunaldasx.vercel.app";
-export const CONTACT_URL = "https://kunaldasx.vercel.app/contact";
-export const REPO_URL = "https://github.com/kunaldasx/code-connect";
-export const GITHUB_URL = "https://github.com/kunaldasx";
+export const REPO_URL = process.env.NEXT_PUBLIC_REPO_URL ?? "";
 
 export const EDITOR_SETTINGS_KEY = "editor-settings";
 

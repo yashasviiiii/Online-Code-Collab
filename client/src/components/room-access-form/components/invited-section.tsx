@@ -5,7 +5,6 @@
  * - Submit handling
  * - Loading states
  *
- * By Kunal Das
  */
 
 import { useState } from "react";

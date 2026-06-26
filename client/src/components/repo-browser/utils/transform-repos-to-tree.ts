@@ -5,7 +5,6 @@
  * - Icon assignment
  * - Type-safe conversion
  *
- * By Kunal Das
  */
 
 import { Folder } from "lucide-react";

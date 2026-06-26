@@ -5,7 +5,6 @@
  * - Panel toggle actions
  * - Editor command access
  *
- * By Kunal Das
  */
 
 import { Menu } from "lucide-react";

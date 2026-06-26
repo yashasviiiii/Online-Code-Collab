@@ -5,7 +5,6 @@
  * - Editor state management
  * - Change synchronization
  *
- * By Kunal Das
  */
 
 import type { EditOp } from "@/types/operation";

@@ -6,9 +6,7 @@
  * - Resizable panels for editor, terminal, preview
  * - Room-based collaboration
  * - Space-themed UI matching the landing page aesthetic
- *
- * By Kunal Das
- */
+ * */
 
 "use client";
 

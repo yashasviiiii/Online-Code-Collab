@@ -6,7 +6,6 @@
  * - Menu separators
  * - Keyboard shortcuts
  *
- * By Kunal Das
  */
 
 import {

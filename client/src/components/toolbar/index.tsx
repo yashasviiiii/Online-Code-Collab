@@ -6,7 +6,6 @@
  * - Editor command access
  * - Dialog/sheet management
  *
- * By Kunal Das
  */
 
 import type { Monaco } from "@monaco-editor/react";
@@ -278,7 +277,9 @@ const Toolbar = ({
     toggleWebcamPanel: () => setShowWebcam((show) => !show),
     toggleSandpackPanel: () => setShowLivePreview((show) => !show),
     manual: () => {
-      window.open(`${REPO_URL}/blob/main/manual.md`, "_blank");
+      if (REPO_URL) {
+        window.open(`${REPO_URL}/blob/main/manual.md`, "_blank");
+      }
     },
     about: () => aboutDialogRef.current?.openDialog(),
   };

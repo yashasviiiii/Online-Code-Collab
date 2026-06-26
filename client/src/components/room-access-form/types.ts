@@ -4,7 +4,6 @@
  * - Create room form types
  * - Join room form types
  *
- * By Kunal Das
  */
 
 export interface CreateRoomForm {

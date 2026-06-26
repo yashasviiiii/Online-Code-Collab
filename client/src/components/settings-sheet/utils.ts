@@ -5,7 +5,6 @@
  * - Title case formatting
  * - Settings file handling
  *
- * By Kunal Das
  */
 
 import type * as monaco from "monaco-editor";

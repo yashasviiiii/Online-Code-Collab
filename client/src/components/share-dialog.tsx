@@ -6,7 +6,6 @@
  * - Responsive dialog/drawer
  * - Copy success feedback
  *
- * By Kunal Das
  */
 
 import { Check, Copy } from "lucide-react";

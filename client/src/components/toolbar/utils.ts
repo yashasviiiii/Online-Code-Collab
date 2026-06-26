@@ -5,7 +5,6 @@
  * - Menu command handlers
  * - Error handling
  *
- * By Kunal Das
  */
 
 import type { Monaco } from "@monaco-editor/react";

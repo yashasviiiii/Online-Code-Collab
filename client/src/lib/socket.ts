@@ -5,7 +5,6 @@
  * - Server URL configuration
  * - Connection management
  *
- * By Kunal Das
  */
 
 import type {

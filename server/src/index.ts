@@ -6,7 +6,6 @@
  * - Message handling
  * - CORS configuration
  *
- * By Kunal Das
  */
 
 import { App } from "uWebSockets.js";

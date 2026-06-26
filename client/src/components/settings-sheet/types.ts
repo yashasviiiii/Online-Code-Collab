@@ -5,7 +5,6 @@
  * - Type constraints
  * - Value definitions
  *
- * By Kunal Das
  */
 
 export interface EditorOption {

@@ -5,7 +5,6 @@
  * - Feature descriptions
  * - Icon integration
  *
- * By Kunal Das
  */
 
 import {

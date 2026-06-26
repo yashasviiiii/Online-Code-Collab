@@ -5,7 +5,6 @@
  * - Theme persistence
  * - Theme switching
  *
- * By Kunal Das
  */
 
 "use client";

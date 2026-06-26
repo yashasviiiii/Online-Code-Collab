@@ -6,7 +6,6 @@
  * - Content metadata
  * - Commit response
  *
- * By Kunal Das
  */
 
 import type { itemType } from "./tree";

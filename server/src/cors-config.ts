@@ -5,7 +5,6 @@
  * - Vercel deployment detection
  * - Header generation
  *
- * By Kunal Das
  */
 
 const ALLOWED_ORIGINS = [

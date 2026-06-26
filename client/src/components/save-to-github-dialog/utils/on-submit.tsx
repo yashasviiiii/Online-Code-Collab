@@ -5,7 +5,6 @@
  * - Toast notifications
  * - Success/error messaging
  *
- * By Kunal Das
  */
 
 import { ExternalLink } from "lucide-react";

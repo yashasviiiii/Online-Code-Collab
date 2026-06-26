@@ -5,7 +5,6 @@
  * - Cursor position tracking
  * - Selection feedback
  *
- * By Kunal Das
  */
 
 import type { Monaco } from "@monaco-editor/react";

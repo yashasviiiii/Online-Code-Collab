@@ -5,7 +5,6 @@
  * - Blurred backdrop
  * - Description message
  *
- * By Kunal Das
  */
 
 import { memo } from "react";

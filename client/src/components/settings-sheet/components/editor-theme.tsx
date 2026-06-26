@@ -5,7 +5,6 @@
  * - Theme preview with CSS variable updates
  * - Theme persistence
  *
- * By Kunal Das
  */
 
 import type { Monaco } from "@monaco-editor/react";

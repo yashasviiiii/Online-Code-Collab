@@ -6,7 +6,6 @@
  * - Args/stdin input handling
  * - Status indication
  *
- * By Kunal Das
  */
 
 import { CodeServiceMsg } from "@/types/message";

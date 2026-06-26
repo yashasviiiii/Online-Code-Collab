@@ -6,7 +6,6 @@
  * - Statistical analysis
  * - Results visualization
  *
- * By Kunal Das
  */
 
 "use client";

@@ -5,7 +5,6 @@
  * - Color generation and caching
  * - Bulk operations support
  *
- * By Kunal Das
  */
 
 import type { User } from "@/types/user";

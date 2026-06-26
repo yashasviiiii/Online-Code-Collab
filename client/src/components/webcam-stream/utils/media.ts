@@ -5,7 +5,6 @@
  * - Peer connection recreation on stream change
  * - Device switching
  *
- * By Kunal Das
  */
 
 import type { Dispatch, RefObject, SetStateAction } from "react";

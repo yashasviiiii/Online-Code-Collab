@@ -5,7 +5,6 @@
  * - Markdown content reading
  * - Socket-based sync
  *
- * By Kunal Das
  */
 
 import { RoomServiceMsg } from "@/types/message";

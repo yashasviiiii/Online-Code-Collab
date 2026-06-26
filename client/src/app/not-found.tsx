@@ -5,7 +5,6 @@
  * - Return to home button
  * - Responsive layout
  *
- * By Kunal Das
  */
 
 "use client";

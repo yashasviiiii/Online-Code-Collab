@@ -5,7 +5,6 @@
  * - Space-themed copy
  * - Accessible status message
  *
- * By Kunal Das
  */
 
 export const RedirectingCard = () => (

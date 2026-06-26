@@ -5,7 +5,6 @@
  * - Desktop/mobile specific props
  * - Menu action definitions
  *
- * By Kunal Das
  */
 
 export interface MenuProps {

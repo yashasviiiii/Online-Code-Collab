@@ -5,9 +5,7 @@
  * - File/directory contents
  * - Authentication validation
  * - Error handling
- *
- * By Kunal Das
- */
+ * */
 
 import { cookies } from "next/headers";
 import type { NextRequest } from "next/server";

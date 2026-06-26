@@ -5,7 +5,6 @@
  * - Cursor position type
  * - Range information
  *
- * By Kunal Das
  */
 
 /**

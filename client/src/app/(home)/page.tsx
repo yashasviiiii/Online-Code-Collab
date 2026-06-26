@@ -6,7 +6,6 @@
  * - About and latency test buttons
  * - Server status indicator
  *
- * By Kunal Das
  */
 
 import { Suspense } from "react";

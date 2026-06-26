@@ -5,7 +5,6 @@
  * - Icon imports
  * - Keyboard shortcut mapping
  *
- * By Kunal Das
  */
 
 import {

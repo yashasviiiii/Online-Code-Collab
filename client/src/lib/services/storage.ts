@@ -5,7 +5,6 @@
  * - User ID management
  * - Follow mode state
  *
- * By Kunal Das
  */
 
 interface StorageData {

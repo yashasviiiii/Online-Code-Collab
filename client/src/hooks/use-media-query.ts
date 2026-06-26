@@ -5,7 +5,6 @@
  * - Real-time updates
  * - Cleanup on unmount
  *
- * By Kunal Das
  */
 
 import { useEffect, useState } from "react";

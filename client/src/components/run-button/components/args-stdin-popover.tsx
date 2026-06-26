@@ -5,7 +5,6 @@
  * - Standard input handling
  * - Input validation
  *
- * By Kunal Das
  */
 
 import { ChevronDown, X } from "lucide-react";

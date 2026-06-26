@@ -5,7 +5,6 @@
  * - Camera rotation (mobile)
  * - Microphone toggle
  *
- * By Kunal Das
  */
 
 import { StreamServiceMsg } from "@/types/message";

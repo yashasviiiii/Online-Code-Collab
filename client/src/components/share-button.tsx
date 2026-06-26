@@ -5,7 +5,6 @@
  * - Accessible tooltip
  * - Room ID handling
  *
- * By Kunal Das
  */
 
 import { Share } from "lucide-react";

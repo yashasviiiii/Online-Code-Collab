@@ -5,7 +5,6 @@
  * - Authentication status check
  * - Session cleanup
  *
- * By Kunal Das
  */
 
 import type { NextRequest } from "next/server";

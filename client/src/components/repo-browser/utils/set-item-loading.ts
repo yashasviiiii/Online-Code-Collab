@@ -5,7 +5,6 @@
  * - Loading state management
  * - Immutable state updates
  *
- * By Kunal Das
  */
 
 import type { Dispatch, SetStateAction } from "react";

@@ -6,7 +6,6 @@
  * - Error handling
  * - Tree data transformation
  *
- * By Kunal Das
  */
 
 import type { Dispatch, SetStateAction } from "react";

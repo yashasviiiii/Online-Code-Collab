@@ -6,7 +6,6 @@
  * - Event handling
  * - Socket integration
  *
- * By Kunal Das
  */
 
 import { CodeServiceMsg, ScrollServiceMsg } from "@/types/message";
