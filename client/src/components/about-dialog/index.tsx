@@ -1,0 +1,220 @@
+/**
+ * About dialog component that provides information about the application.
+ * Features:
+ * - Responsive dialog/drawer based on screen size
+ * - Project description
+ * - Preview image with loading state
+ * - External links
+ *
+ */
+
+import Image from "next/image";
+import {
+	forwardRef,
+	useCallback,
+	useEffect,
+	useImperativeHandle,
+	useState,
+} from "react";
+import { Button } from "@/components/ui/button";
+import {
+	Dialog,
+	DialogClose,
+	DialogContent,
+	DialogDescription,
+	DialogFooter,
+	DialogHeader,
+	DialogTitle,
+} from "@/components/ui/dialog";
+import {
+	Drawer,
+	DrawerClose,
+	DrawerContent,
+	DrawerDescription,
+	DrawerFooter,
+	DrawerHeader,
+	DrawerTitle,
+} from "@/components/ui/drawer";
+import { Separator } from "@/components/ui/separator";
+import { Skeleton } from "@/components/ui/skeleton";
+import { useMediaQuery } from "@/hooks/use-media-query";
+import { SITE_NAME, REPO_URL } from "@/lib/constants";
+import { cn } from "@/lib/utils";
+
+import { ExternalLink } from "./components/external-link";
+
+interface AboutDialogRef {
+	closeDialog: () => void;
+	openDialog: () => void;
+}
+
+interface AboutDialogProps {
+	forceDark?: boolean;
+}
+
+const AboutDialog = forwardRef<AboutDialogRef, AboutDialogProps>(
+	({ forceDark = false }, ref) => {
+		const [isOpen, setIsOpen] = useState(false);
+		const [isImgLoaded, setIsImgLoaded] = useState(false);
+
+		const isDesktop = useMediaQuery("(min-width: 768px)");
+
+		const openDialog = useCallback(() => setIsOpen(true), []);
+		const closeDialog = useCallback(() => setIsOpen(false), []);
+
+		// Expose openDialog and closeDialog to the parent component
+		useImperativeHandle(ref, () => ({
+			openDialog,
+			closeDialog,
+		}));
+
+		useEffect(() => {
+			if (isOpen) {
+				setIsImgLoaded(false);
+			}
+		}, [isOpen]);
+
+		useEffect(() => {
+			setIsImgLoaded(false);
+		}, []);
+
+		if (isDesktop) {
+			return (
+				<Dialog
+					aria-label="About CodeConnect"
+					onOpenChange={setIsOpen}
+					open={isOpen}
+				>
+					<DialogContent
+						className={cn(
+							"max-w-4xl h-[90vh] overflow-scroll scrollbar-none my-2",
+							forceDark && "dark",
+						)}
+					>
+						<DialogHeader className="text-left text-foreground">
+							<DialogTitle>{SITE_NAME}</DialogTitle>
+							<DialogDescription className="pt-2 text-base">
+								Code Connect is a browser-based collaborative development
+								platform that enables real-time coding, live previews, shared
+								terminals, video communication, and collaborative note-taking.
+							</DialogDescription>
+						</DialogHeader>
+
+						<div
+							aria-label="CodeConnect application preview"
+							className="relative aspect-600/315"
+							role="img"
+						>
+							<Image
+								alt="CodeConnect application interface preview"
+								aria-hidden={!isImgLoaded}
+								className="absolute rounded-md object-cover"
+								fill
+								loading="eager"
+								onLoad={() => setIsImgLoaded(true)}
+								quality={100}
+								sizes="1200px"
+								src="/images/cover.png"
+							/>
+							{!isImgLoaded && (
+								<Skeleton
+									aria-label="Loading image..."
+									className="absolute inset-0 h-full w-full rounded-lg"
+								/>
+							)}
+						</div>
+
+						<Separator />
+
+						{REPO_URL && (
+							<nav
+								aria-label="External links"
+								className="flex justify-center"
+							>
+								<ExternalLink forceDark={forceDark} />
+							</nav>
+						)}
+
+						<DialogFooter>
+							<DialogClose asChild>
+								<Button aria-label="Close dialog" variant="secondary">
+									Close
+								</Button>
+							</DialogClose>
+						</DialogFooter>
+					</DialogContent>
+				</Dialog>
+			);
+		}
+
+		return (
+			<Drawer
+				aria-label="About CodeConnect"
+				onOpenChange={setIsOpen}
+				open={isOpen}
+			>
+				<DrawerContent>
+					<DrawerHeader>
+						<DrawerTitle className="text-left">{SITE_NAME}</DrawerTitle>
+						<DrawerDescription className="pt-2 text-left text-base">
+							Code Connect is a browser-based collaborative development
+							platform that enables real-time coding, live previews, shared
+							terminals, video communication, and collaborative note-taking.
+						</DrawerDescription>
+					</DrawerHeader>
+
+					<div
+						aria-label="CodeConnect application preview"
+						className="w-full px-4"
+						role="img"
+					>
+						<div className="relative aspect-600/315 w-full max-w-full">
+							<Image
+								alt="CodeConnect application interface preview"
+								aria-hidden={!isImgLoaded}
+								className="rounded-md object-cover"
+								fill
+								loading="eager"
+								onLoad={() => setIsImgLoaded(true)}
+								quality={100}
+								sizes="(max-width: 768px) 100vw, 600px"
+								src="/images/cover.png"
+							/>
+							{!isImgLoaded && (
+								<Skeleton
+									aria-label="Loading image..."
+									className="absolute inset-0 h-full w-full rounded-lg"
+								/>
+							)}
+						</div>
+					</div>
+
+					<div className="px-4">
+						<Separator aria-hidden="true" className="my-4" />
+					</div>
+
+					{REPO_URL && (
+						<nav
+							aria-label="External links"
+							className="mx-4 flex justify-center"
+						>
+							<ExternalLink forceDark={forceDark} />
+						</nav>
+					)}
+
+					<DrawerFooter>
+						<DrawerClose asChild>
+							<Button aria-label="Close drawer" variant="secondary">
+								Close
+							</Button>
+						</DrawerClose>
+					</DrawerFooter>
+				</DrawerContent>
+			</Drawer>
+		);
+	},
+);
+
+AboutDialog.displayName = "OpenPromptDialog";
+
+export { AboutDialog, type AboutDialogRef };
