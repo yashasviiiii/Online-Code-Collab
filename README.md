@@ -43,7 +43,6 @@
   <img src="client/public/images/cover.png" alt="preview" width="100%" />
 </p>
 
-🌐 **Live Demo**🔗 [codeconnect-dev.vercel.app](https://codeconnect-dev.vercel.app)
 
 ## Key Features
 
