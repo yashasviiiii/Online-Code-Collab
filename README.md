@@ -32,14 +32,6 @@
 </p>
 
 <p align="center">
-  <a href="#key-features">Key Features</a> •
-  <a href="#how-to-use">How To Use</a> •
-  <a href="#how-to-contribute">How To Contribute</a> •
-  <a href="#technologies">Technologies</a> •
-  <a href="#license">License</a>
-</p>
-
-<p align="center">
   <img src="client/public/images/cover.png" alt="preview" width="100%" />
 </p>
 
